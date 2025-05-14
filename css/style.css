@@ -28,6 +28,8 @@ header{
         font-size: 4rem;
         text-shadow: 1px 1px 2px black;
     }
+
+    
 }
 
 /*Main section*/
@@ -36,12 +38,15 @@ main{
 
     .main-container{
         padding: 20px 20px;
+        width: 95%;
+        max-width: 766px;
+        margin: 0 auto;
     }
 
     h1{
         color: #4e3969;
         text-transform: capitalize;
-        padding-top: 10px;
+        padding: 10px 0 30px;
     }
 
     h4{
@@ -50,7 +55,38 @@ main{
         color: #b1b8c5;
     }
 
+    .recipe-ctn{
+        width: 100%;
+        box-shadow: 1px 1px 3px grey;
+        padding-bottom: 20px;
+    }
 
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        text-transform: capitalize;
+        padding: 15px 15px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px;
+        gap: 10px;
+        list-style: none;
+    }
 
 
 }
@@ -68,7 +104,11 @@ main{
 @media screen and (min-width:768px){
     .header-container h1{
        text-align: left;
+    }
 
+    main .main-container{
+        width: 85%;
+        padding-top: 50px;
     }
     
 }
@@ -77,4 +117,9 @@ main{
     .main-container span{
         display: none;
     }
+
+}
+
+@media screen and (min-width: 992px){
+
 }
