@@ -6,6 +6,7 @@
 
 body{
     font-family: Montserrat, "Helvetica Neue", sans-serif;
+    background-color: #f6f5f3;
 }
 
 
@@ -15,9 +16,9 @@ header{
     
     .header-container{
         background-color: white;
-        height: 70px;
         text-align: center;
         width: 100%;
+        padding: 10px 0;
     }
     
     h1{
@@ -25,6 +26,55 @@ header{
         text-transform: uppercase;
         color: #ff9614;
         font-size: 4rem;
-        text-shadow: 2px 2px 2px black;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+/*Main section*/
+
+main{
+
+    .main-container{
+        padding: 20px 20px;
+    }
+
+    h1{
+        color: #4e3969;
+        text-transform: capitalize;
+        padding-top: 10px;
+    }
+
+    h4{
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #b1b8c5;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*Media section*/
+
+@media screen and (min-width:768px){
+    .header-container h1{
+       text-align: left;
+
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .main-container span{
+        display: none;
     }
 }
