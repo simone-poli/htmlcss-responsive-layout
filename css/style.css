@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+
+/*Header section*/
+
+header{
+    
+    .header-container{
+        background-color: white;
+        height: 70px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    h1{
+        font-family: "Nerko One", cursive;
+        text-transform: uppercase;
+        color: #ff9614;
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px black;
+    }
+}
