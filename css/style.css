@@ -64,7 +64,6 @@ main{
     .row{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
     }
 
     .col{
@@ -88,6 +87,27 @@ main{
         list-style: none;
     }
 
+    .icon{
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    #facebook,
+    #twitter,
+    #instagram,
+    #pinterest,
+    #youtube{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+       
+    }
 
 }
 
@@ -111,15 +131,81 @@ main{
         padding-top: 50px;
     }
     
+    main ul{
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    li{
+       width: calc(100%/12*3);
+    }
+
+    main.row{
+        flex-wrap: wrap;
+    }
+
+    .icon span{
+        display: none;
+    }
+
+   .icon #facebook,
+   .icon #twitter,
+   .icon #instagram,
+   .icon #pinterest,
+   .icon #youtube{
+        height: 2.5rem;
+        width: 7rem;
+    }
 }
 
 @media screen and (max-width: 767px){
     .main-container span{
         display: none;
     }
+    .icon span{
+        display: none;
+    }
 
 }
 
 @media screen and (min-width: 992px){
+    main .main-container{
+        width: 65%;
+    }
 
+    main .col{
+        width: 50%;
+    }
+
+    main .row{
+        flex-direction: row;
+    }
+
+    main .col-left{
+        width: 70%;
+    }
+
+   main .col-right{
+        width: 30%;
+    }
+
+    main ul{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        font-size: small;
+    }
+
+    main li{
+        width: 100%;
+    }
+
+    section.recipe-ctn{
+        padding-bottom: 0;
+    }
+
+    .icon span{
+        display:block ;
+    }
 }
